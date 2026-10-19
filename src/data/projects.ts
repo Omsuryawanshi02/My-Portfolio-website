@@ -14,16 +14,6 @@ export const projectsData: Project[] = [
     image: "/images/cyber-threat.jpg",
   },
   {
-    id: "smart-irrigation",
-    title: "Smart Irrigation Recommendation",
-    description:
-      "A machine learning project exploring irrigation recommendations and automated valve controls using agricultural sensor data.",
-    technologies: ["Python", "scikit-learn", "pandas", "IoT Telemetry"],
-    githubUrl: "https://github.com/Omsuryawanshi02",
-    featured: true,
-    image: "/images/smart-irrigation.jpg",
-  },
-  {
     id: "guardian-desk",
     title: "Guardian-Desk Cybersecurity",
     description:
@@ -34,16 +24,6 @@ export const projectsData: Project[] = [
     image: "/images/guardian-desk.jpg",
   },
   {
-    id: "indiakart-analytics",
-    title: "IndiaKart E-Commerce Analytics",
-    description:
-      "An e-commerce analytics platform evaluating sales performance, customer trends, SQL query metrics, and regional dashboards.",
-    technologies: ["SQL", "Python", "pandas", "Power BI"],
-    githubUrl: "https://github.com/Omsuryawanshi02",
-    featured: true,
-    image: "/images/indiakart-analytics.jpg",
-  },
-  {
     id: "multi-agent-code-helper",
     title: "Multi-Agent Code Helper",
     description:
@@ -52,15 +32,5 @@ export const projectsData: Project[] = [
     githubUrl: "https://github.com/Omsuryawanshi02",
     featured: true,
     image: "/images/code-helper.png",
-  },
-  {
-    id: "hospital-navigation",
-    title: "Hospital Navigation System",
-    description:
-      "An interactive indoor navigation system helping patients and visitors navigate complex hospital departments with 3D pathfinding.",
-    technologies: ["JavaScript", "Python", "Flask", "Pathfinding"],
-    githubUrl: "https://github.com/Omsuryawanshi02",
-    featured: true,
-    image: "/images/hospital-nav.jpg",
   },
 ];
