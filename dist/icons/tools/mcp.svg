@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
-  <rect x="10" y="10" width="180" height="180" rx="40" fill="#6b46c1" />
-  <text x="100" y="125" font-family="Arial" font-size="70" text-anchor="middle" fill="#ffffff" font-weight="bold">MCP</text>
-  <circle cx="40" cy="40" r="10" fill="#ffffff" />
-  <circle cx="160" cy="40" r="10" fill="#ffffff" />
-  <circle cx="40" cy="160" r="10" fill="#ffffff" />
-  <circle cx="160" cy="160" r="10" fill="#ffffff" />
-</svg>
