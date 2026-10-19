@@ -7,20 +7,17 @@ import { SectionHeading } from '../ui/SectionHeading';
 
 export const Projects: React.FC = () => {
   return (
-    <section id="work" className="w-full px-6 sm:px-10 lg:px-[10%] xl:px-[12%] py-20 scroll-mt-20">
+    <section id="work" className="w-full px-6 sm:px-10 lg:px-[8%] xl:px-[10%] py-20 scroll-mt-20">
       <SectionHeading
         eyebrow="MY PORTFOLIO"
         title="Latest Work"
-        subtitle="Explore a collection of projects showcasing my expertise in AI Agents, intelligent automation, and modern web application development."
+        subtitle="Explore selected engineering projects applying AI, machine learning, and cybersecurity to solve practical problems."
       />
 
-      {/* Balanced and Centered Projects Grid */}
-      <div className="flex flex-wrap justify-center items-center gap-6 sm:gap-8 my-10 max-w-7xl mx-auto">
+      {/* Balanced 3-Column Projects Grid on one row */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 my-10 max-w-6xl mx-auto items-stretch">
         {projectsData.map((project, index) => (
-          <div
-            key={project.id}
-            className="w-full sm:w-[calc(50%-1.25rem)] lg:w-[calc(33.333%-1.5rem)] max-w-[380px] flex justify-center"
-          >
+          <div key={project.id} className="w-full max-w-[380px] mx-auto flex justify-center">
             <ProjectCard project={project} index={index} />
           </div>
         ))}
