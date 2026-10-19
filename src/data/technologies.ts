@@ -1,8 +1,6 @@
-export interface FrequentTool {
-  name: string;
-  iconSrc: string;
-  category: string;
-}
+import { FrequentTool, TechCategory, TechItem } from '../types';
+
+export type { FrequentTool, TechCategory, TechItem };
 
 export const frequentTools: FrequentTool[] = [
   { name: 'LangGraph', iconSrc: '/icons/tools/langgraph.svg', category: 'Agent Orchestration' },

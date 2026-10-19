@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { servicesData } from '../data/services';
-import { SectionHeading } from './SectionHeading';
+import { servicesData } from '../../data/services';
+import { SectionHeading } from '../ui/SectionHeading';
 import { Brain, Bot, Layout, BarChart3 } from 'lucide-react';
 
 export const Services: React.FC = () => {

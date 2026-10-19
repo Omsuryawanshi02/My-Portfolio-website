@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-interface SectionHeadingProps {
+export interface SectionHeadingProps {
   eyebrow: string;
   title: string;
   subtitle?: string;

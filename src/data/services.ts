@@ -1,10 +1,6 @@
-export interface ServiceItem {
-  id: string;
-  icon: string;
-  emoji: string;
-  title: string;
-  description: string;
-}
+import { ServiceItem } from '../types';
+
+export type { ServiceItem };
 
 export const servicesData: ServiceItem[] = [
   {

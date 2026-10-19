@@ -1,5 +1,5 @@
 import React from 'react';
-import { profileData } from '../data/profile';
+import { profileData } from '../../data/profile';
 
 export const Footer: React.FC = () => {
   const scrollToTop = () => {

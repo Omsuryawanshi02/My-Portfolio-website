@@ -1,8 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowUpRight, Trophy, Sparkles, Github, Linkedin, Award, Code, Compass } from 'lucide-react';
-import { SectionHeading } from './SectionHeading';
-import { profileData } from '../data/profile';
+import { ArrowUpRight, Trophy, Award, Github } from 'lucide-react';
+import { SectionHeading } from '../ui/SectionHeading';
+import { profileData } from '../../data/profile';
 
 export const Community: React.FC = () => {
   return (

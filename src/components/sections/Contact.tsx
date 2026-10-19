@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Mail, Github, Linkedin, MapPin, Send, CheckCircle, AlertCircle, Copy, Check } from 'lucide-react';
-import { profileData } from '../data/profile';
-import { SectionHeading } from './SectionHeading';
+import { profileData } from '../../data/profile';
+import { SectionHeading } from '../ui/SectionHeading';
 
 export const Contact: React.FC = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });

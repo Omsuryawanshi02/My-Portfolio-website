@@ -1,14 +1,14 @@
 import React from 'react';
-import { BackgroundDecor } from './components/BackgroundDecor';
-import { Navbar } from './components/Navbar';
-import { Hero } from './components/Hero';
-import { About } from './components/About';
-import { TechStack } from './components/TechStack';
-import { Services } from './components/Services';
-import { Projects } from './components/Projects';
-import { Community } from './components/Community';
-import { Contact } from './components/Contact';
-import { Footer } from './components/Footer';
+import { BackgroundDecor, Navbar, Footer } from './components/layout';
+import {
+  Hero,
+  About,
+  Services,
+  TechStack,
+  Projects,
+  Community,
+  Contact,
+} from './components/sections';
 
 export const App: React.FC = () => {
   return (

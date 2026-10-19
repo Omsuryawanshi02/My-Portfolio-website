@@ -1,13 +1,6 @@
-export interface Project {
-  id: string;
-  title: string;
-  description: string;
-  technologies: string[];
-  githubUrl?: string;
-  demoUrl?: string;
-  featured?: boolean;
-  image: string;
-}
+import { Project } from '../types';
+
+export type { Project };
 
 export const projectsData: Project[] = [
   {

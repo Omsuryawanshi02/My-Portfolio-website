@@ -1,9 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Code2, GraduationCap, FolderKanban, Sparkles } from 'lucide-react';
-import { profileData } from '../data/profile';
-import { frequentTools } from '../data/technologies';
-import { SectionHeading } from './SectionHeading';
+import { profileData } from '../../data/profile';
+import { frequentTools } from '../../data/technologies';
+import { SectionHeading } from '../ui/SectionHeading';
 
 export const About: React.FC = () => {
   const getCardIcon = (id: string) => {

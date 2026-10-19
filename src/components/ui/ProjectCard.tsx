@@ -1,9 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowUpRight } from 'lucide-react';
-import { Project } from '../data/projects';
+import { Project } from '../../types';
 
-interface ProjectCardProps {
+export interface ProjectCardProps {
   project: Project;
   index: number;
 }

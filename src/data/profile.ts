@@ -1,34 +1,6 @@
-export interface ProfileData {
-  name: string;
-  firstName: string;
-  brandTitle: string;
-  headline: string;
-  tagline: string;
-  bioIntro: string;
-  aboutParagraph: string;
-  location: string;
-  education: {
-    degree: string;
-    institution: string;
-    location: string;
-    period: string;
-  };
-  contact: {
-    email: string;
-    github: string;
-    linkedin: string;
-    twitter?: string;
-    phone?: string;
-  };
-  resumeUrl: string;
-  avatarUrl: string;
-  infoCards: {
-    id: string;
-    icon: string;
-    title: string;
-    description: string;
-  }[];
-}
+import { ProfileData } from '../types';
+
+export type { ProfileData };
 
 export const profileData: ProfileData = {
   name: "Om Suryawanshi",

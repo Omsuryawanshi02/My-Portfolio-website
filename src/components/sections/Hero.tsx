@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, Download } from 'lucide-react';
-import { profileData } from '../data/profile';
+import { profileData } from '../../data/profile';
 
 export const Hero: React.FC = () => {
   return (

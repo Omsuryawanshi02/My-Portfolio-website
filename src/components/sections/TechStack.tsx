@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { categorizedTechnologies } from '../data/technologies';
-import { SectionHeading } from './SectionHeading';
+import { categorizedTechnologies } from '../../data/technologies';
+import { SectionHeading } from '../ui/SectionHeading';
 import { Code, Brain, Bot, Globe, Wrench, CheckCircle2 } from 'lucide-react';
 
 export const TechStack: React.FC = () => {

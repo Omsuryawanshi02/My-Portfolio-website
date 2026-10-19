@@ -1,9 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, Github } from 'lucide-react';
-import { projectsData } from '../data/projects';
-import { ProjectCard } from './ProjectCard';
-import { SectionHeading } from './SectionHeading';
+import { projectsData } from '../../data/projects';
+import { ProjectCard } from '../ui/ProjectCard';
+import { SectionHeading } from '../ui/SectionHeading';
 
 export const Projects: React.FC = () => {
   return (
