@@ -4,7 +4,6 @@ import {
   Hero,
   About,
   Services,
-  TechStack,
   Projects,
   Community,
   Contact,
@@ -28,9 +27,6 @@ export const App: React.FC = () => {
 
         {/* Services / What I Do Section */}
         <Services />
-
-        {/* Skills & Technologies Section */}
-        <TechStack />
 
         {/* Featured Projects / My Work Section */}
         <Projects />
