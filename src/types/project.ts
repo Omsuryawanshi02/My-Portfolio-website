@@ -7,4 +7,5 @@ export interface Project {
   demoUrl?: string;
   featured?: boolean;
   image: string;
+  category?: string;
 }
