@@ -51,7 +51,7 @@ export const Hero: React.FC = () => {
         transition={{ duration: 0.7, delay: 0.3 }}
         className="font-outfit font-semibold text-3xl sm:text-6xl lg:text-[66px] text-gray-900 tracking-tight leading-[1.18] max-w-4xl"
       >
-        I am an AI &amp; Data Science Student based in Nashik, India
+        I am a GenAI &amp; DevOps Engineer based in Nashik, India
       </motion.h1>
 
       {/* Supporting paragraph */}
@@ -61,7 +61,7 @@ export const Hero: React.FC = () => {
         transition={{ duration: 0.6, delay: 0.4 }}
         className="max-w-2xl mx-auto text-gray-600 text-base sm:text-lg leading-relaxed font-light"
       >
-        Building intelligent AI Agents and crafting modern web experiences that bridge the gap between complex AI logic and intuitive user interfaces.
+        Building intelligent AI agents, multi-agent workflows, and robust DevOps CI/CD pipelines bridging cutting-edge AI with production reliability.
       </motion.p>
 
       {/* Call-to-action buttons */}

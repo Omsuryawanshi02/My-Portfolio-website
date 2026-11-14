@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { categorizedTechnologies } from '../../data/technologies';
 import { SectionHeading } from '../ui/SectionHeading';
-import { Code, Brain, Bot, Globe, Wrench, CheckCircle2 } from 'lucide-react';
+import { Code, Brain, Bot, Globe, Wrench, CheckCircle2, Infinity } from 'lucide-react';
 
 export const TechStack: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>('All');
@@ -15,8 +15,11 @@ export const TechStack: React.FC = () => {
         return <Code className="w-4 h-4" />;
       case 'AI & Machine Learning':
         return <Brain className="w-4 h-4" />;
+      case 'AI Engineering & Agents':
       case 'AI Engineering':
         return <Bot className="w-4 h-4" />;
+      case 'DevOps & Cloud':
+        return <Infinity className="w-4 h-4" />;
       case 'Web Development':
         return <Globe className="w-4 h-4" />;
       case 'Tools & Platforms':

@@ -42,13 +42,26 @@ export const categorizedTechnologies: {
     ],
   },
   {
-    category: 'AI Engineering',
+    category: 'AI Engineering & Agents',
     description: 'Modern architectures bridging LLMs with real-world execution environments.',
     items: [
-      { name: 'LLM Integrations' },
-      { name: 'Retrieval-Augmented Generation (RAG)' },
-      { name: 'AI Agents' },
+      { name: 'Multi-Agent Systems', tag: 'Core' },
+      { name: 'RAG & Retrieval Systems' },
+      { name: 'LangGraph' },
+      { name: 'Agentic AI' },
+      { name: 'LLMOps' },
       { name: 'Prompt Engineering' },
+    ],
+  },
+  {
+    category: 'DevOps & Cloud',
+    description: 'Infrastructure automation, containerization, and cloud deployment pipelines.',
+    items: [
+      { name: 'Docker', tag: 'Containers' },
+      { name: 'Jenkins', tag: 'CI/CD' },
+      { name: 'AWS', tag: 'Cloud' },
+      { name: 'Git & GitHub' },
+      { name: 'Linux' },
     ],
   },
   {
@@ -59,17 +72,6 @@ export const categorizedTechnologies: {
       { name: 'Flask' },
       { name: 'HTML5' },
       { name: 'CSS3 / Tailwind' },
-    ],
-  },
-  {
-    category: 'Tools & Platforms',
-    description: 'Development environments, databases, and version control tools.',
-    items: [
-      { name: 'Git' },
-      { name: 'GitHub' },
-      { name: 'VS Code' },
-      { name: 'MySQL' },
-      { name: 'Jupyter Notebook' },
     ],
   },
 ];

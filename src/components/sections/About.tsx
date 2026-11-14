@@ -46,7 +46,7 @@ export const About: React.FC = () => {
             <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent pointer-events-none" />
             <div className="absolute bottom-4 left-4 right-4 text-white">
               <p className="font-outfit text-xl font-semibold">{profileData.name}</p>
-              <p className="text-xs text-gray-200">AI &amp; Data Science Engineer</p>
+              <p className="text-xs text-gray-200">GenAI &amp; DevOps Engineer</p>
             </div>
           </div>
         </motion.div>
