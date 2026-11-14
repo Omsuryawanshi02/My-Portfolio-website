@@ -69,32 +69,33 @@ export const Contact: React.FC = () => {
         subtitle="I'm always interested in learning, building useful technology, and connecting with people working on exciting ideas."
       />
 
-      <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 items-start my-10">
+      {/* Symmetric 2-Column Grid with Equal Height and Matched Alignment */}
+      <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch my-10">
         {/* Left Column: Direct Info Cards */}
         <motion.div
-          initial={{ opacity: 0, x: -30 }}
+          initial={{ opacity: 0, x: -25 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, margin: '-50px' }}
-          transition={{ duration: 0.6 }}
-          className="lg:col-span-5 flex flex-col gap-4"
+          transition={{ duration: 0.5 }}
+          className="bg-white/80 backdrop-blur-md rounded-2xl border border-gray-200/90 p-7 sm:p-8 shadow-sm flex flex-col justify-between h-full"
         >
-          <div className="bg-white/80 backdrop-blur-md rounded-2xl border border-gray-200/90 p-6 shadow-sm">
-            <h3 className="text-xl font-bold font-outfit text-gray-900 mb-2">
+          <div>
+            <h3 className="text-2xl font-bold font-outfit text-gray-900 mb-2">
               Reach Out Directly
             </h3>
-            <p className="text-xs sm:text-sm text-gray-600 leading-relaxed mb-6 font-light">
+            <p className="text-xs sm:text-sm text-gray-600 leading-relaxed mb-6 font-light min-h-[40px]">
               Feel free to send me an email, connect on LinkedIn, or follow my projects on GitHub.
             </p>
 
-            <div className="space-y-4">
+            <div className="space-y-3.5">
               {/* Email */}
-              <div className="flex items-center justify-between p-3.5 rounded-xl bg-gray-50 border border-gray-200/80">
+              <div className="flex items-center justify-between p-3.5 sm:p-4 rounded-xl bg-gray-50/80 border border-gray-200/80 hover:bg-white hover:border-gray-300 transition group">
                 <div className="flex items-center gap-3 overflow-hidden">
-                  <div className="w-9 h-9 rounded-lg bg-gray-900 text-white flex items-center justify-center flex-shrink-0">
+                  <div className="w-10 h-10 rounded-xl bg-gray-900 text-white flex items-center justify-center flex-shrink-0 shadow-xs">
                     <Mail className="w-4 h-4" />
                   </div>
                   <div className="overflow-hidden">
-                    <p className="text-[11px] text-gray-500 uppercase font-mono">Email</p>
+                    <p className="text-[11px] text-gray-500 uppercase font-mono tracking-wider">Email</p>
                     <a
                       href={`mailto:${profileData.contact.email}`}
                       className="text-xs sm:text-sm font-semibold text-gray-900 hover:underline truncate block"
@@ -104,8 +105,9 @@ export const Contact: React.FC = () => {
                   </div>
                 </div>
                 <button
+                  type="button"
                   onClick={handleCopyEmail}
-                  className="p-2 rounded-lg hover:bg-gray-200 text-gray-600 transition"
+                  className="p-2 rounded-lg hover:bg-gray-200/70 text-gray-600 transition flex-shrink-0"
                   title="Copy email address"
                   aria-label="Copy email address"
                 >
@@ -118,18 +120,20 @@ export const Contact: React.FC = () => {
                 href={profileData.contact.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 p-3.5 rounded-xl bg-gray-50 border border-gray-200/80 hover:bg-white hover:border-black transition group"
+                className="flex items-center justify-between p-3.5 sm:p-4 rounded-xl bg-gray-50/80 border border-gray-200/80 hover:bg-white hover:border-black transition group"
               >
-                <div className="w-9 h-9 rounded-lg bg-blue-600 text-white flex items-center justify-center flex-shrink-0">
-                  <Linkedin className="w-4 h-4" />
+                <div className="flex items-center gap-3 overflow-hidden">
+                  <div className="w-10 h-10 rounded-xl bg-blue-600 text-white flex items-center justify-center flex-shrink-0 shadow-xs">
+                    <Linkedin className="w-4 h-4" />
+                  </div>
+                  <div>
+                    <p className="text-[11px] text-gray-500 uppercase font-mono tracking-wider">LinkedIn</p>
+                    <p className="text-xs sm:text-sm font-semibold text-gray-900 group-hover:text-blue-600 transition">
+                      Om Suryawanshi
+                    </p>
+                  </div>
                 </div>
-                <div className="flex-1">
-                  <p className="text-[11px] text-gray-500 uppercase font-mono">LinkedIn</p>
-                  <p className="text-xs sm:text-sm font-semibold text-gray-900 group-hover:text-blue-600 transition">
-                    Om Suryawanshi
-                  </p>
-                </div>
-                <span className="text-xs text-gray-400 group-hover:translate-x-0.5 transition-transform">→</span>
+                <span className="text-base text-gray-400 group-hover:text-black group-hover:translate-x-1 transition-all">→</span>
               </a>
 
               {/* GitHub */}
@@ -137,31 +141,38 @@ export const Contact: React.FC = () => {
                 href={profileData.contact.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 p-3.5 rounded-xl bg-gray-50 border border-gray-200/80 hover:bg-white hover:border-black transition group"
+                className="flex items-center justify-between p-3.5 sm:p-4 rounded-xl bg-gray-50/80 border border-gray-200/80 hover:bg-white hover:border-black transition group"
               >
-                <div className="w-9 h-9 rounded-lg bg-black text-white flex items-center justify-center flex-shrink-0">
-                  <Github className="w-4 h-4" />
+                <div className="flex items-center gap-3 overflow-hidden">
+                  <div className="w-10 h-10 rounded-xl bg-black text-white flex items-center justify-center flex-shrink-0 shadow-xs">
+                    <Github className="w-4 h-4" />
+                  </div>
+                  <div>
+                    <p className="text-[11px] text-gray-500 uppercase font-mono tracking-wider">GitHub</p>
+                    <p className="text-xs sm:text-sm font-semibold text-gray-900 group-hover:text-black transition">
+                      @Omsuryawanshi02
+                    </p>
+                  </div>
                 </div>
-                <div className="flex-1">
-                  <p className="text-[11px] text-gray-500 uppercase font-mono">GitHub</p>
-                  <p className="text-xs sm:text-sm font-semibold text-gray-900 group-hover:text-black transition">
-                    @Omsuryawanshi02
-                  </p>
-                </div>
-                <span className="text-xs text-gray-400 group-hover:translate-x-0.5 transition-transform">→</span>
+                <span className="text-base text-gray-400 group-hover:text-black group-hover:translate-x-1 transition-all">→</span>
               </a>
 
               {/* Location */}
-              <div className="flex items-center gap-3 p-3.5 rounded-xl bg-gray-50 border border-gray-200/80">
-                <div className="w-9 h-9 rounded-lg bg-emerald-600 text-white flex items-center justify-center flex-shrink-0">
-                  <MapPin className="w-4 h-4" />
+              <div className="flex items-center justify-between p-3.5 sm:p-4 rounded-xl bg-gray-50/80 border border-gray-200/80 hover:bg-white hover:border-gray-300 transition group">
+                <div className="flex items-center gap-3 overflow-hidden">
+                  <div className="w-10 h-10 rounded-xl bg-emerald-600 text-white flex items-center justify-center flex-shrink-0 shadow-xs">
+                    <MapPin className="w-4 h-4" />
+                  </div>
+                  <div>
+                    <p className="text-[11px] text-gray-500 uppercase font-mono tracking-wider">Location</p>
+                    <p className="text-xs sm:text-sm font-semibold text-gray-800">
+                      {profileData.location}
+                    </p>
+                  </div>
                 </div>
-                <div>
-                  <p className="text-[11px] text-gray-500 uppercase font-mono">Location</p>
-                  <p className="text-xs sm:text-sm font-medium text-gray-800">
-                    {profileData.location}
-                  </p>
-                </div>
+                <span className="text-xs font-mono text-gray-400 px-2.5 py-0.5 rounded-md bg-gray-100">
+                  IST (UTC+5:30)
+                </span>
               </div>
             </div>
           </div>
@@ -169,104 +180,111 @@ export const Contact: React.FC = () => {
 
         {/* Right Column: Contact Form */}
         <motion.div
-          initial={{ opacity: 0, x: 30 }}
+          initial={{ opacity: 0, x: 25 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, margin: '-50px' }}
-          transition={{ duration: 0.6, delay: 0.1 }}
-          className="lg:col-span-7 bg-white/85 backdrop-blur-md rounded-2xl border border-gray-200/90 p-7 sm:p-9 shadow-sm"
+          transition={{ duration: 0.5, delay: 0.1 }}
+          className="bg-white/80 backdrop-blur-md rounded-2xl border border-gray-200/90 p-7 sm:p-8 shadow-sm flex flex-col justify-between h-full"
         >
-          <h3 className="text-2xl font-bold font-outfit text-gray-900 mb-1">
-            Send a Direct Message
-          </h3>
-          <p className="text-xs sm:text-sm text-gray-600 mb-6 font-light">
-            Have a project in mind, want to discuss AI engineering, or simply say hello? Drop me a note below.
-          </p>
+          <div>
+            <h3 className="text-2xl font-bold font-outfit text-gray-900 mb-2">
+              Send a Direct Message
+            </h3>
+            <p className="text-xs sm:text-sm text-gray-600 leading-relaxed mb-6 font-light min-h-[40px]">
+              Have a project in mind, want to discuss AI engineering, or simply say hello? Drop me a note below.
+            </p>
 
-          <form onSubmit={handleSubmit} className="space-y-4">
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div>
-                <label htmlFor="name" className="block text-xs font-semibold text-gray-700 uppercase tracking-wider mb-1.5">
-                  Your Name *
-                </label>
-                <input
-                  id="name"
-                  type="text"
-                  required
-                  value={formData.name}
-                  onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  className="w-full px-4 py-3 text-sm rounded-xl border border-gray-300 bg-white focus:outline-none focus:border-black focus:ring-1 focus:ring-black transition"
-                />
-              </div>
-
-              <div>
-                <label htmlFor="email" className="block text-xs font-semibold text-gray-700 uppercase tracking-wider mb-1.5">
-                  Email Address *
-                </label>
-                <input
-                  id="email"
-                  type="email"
-                  required
-                  value={formData.email}
-                  onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                  className="w-full px-4 py-3 text-sm rounded-xl border border-gray-300 bg-white focus:outline-none focus:border-black focus:ring-1 focus:ring-black transition"
-                />
-              </div>
-            </div>
-
-            <div>
-              <label htmlFor="message" className="block text-xs font-semibold text-gray-700 uppercase tracking-wider mb-1.5">
-                Message *
-              </label>
-              <textarea
-                id="message"
-                required
-                rows={5}
-                value={formData.message}
-                onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                className="w-full px-4 py-3 text-sm rounded-xl border border-gray-300 bg-white focus:outline-none focus:border-black focus:ring-1 focus:ring-black transition resize-none"
-              />
-            </div>
-
-            {/* Error Message */}
-            {status === 'error' && (
-              <div className="flex items-center gap-2 p-3 text-xs rounded-xl bg-red-50 border border-red-200 text-red-700">
-                <AlertCircle className="w-4 h-4 flex-shrink-0" />
-                <span>{errorMessage}</span>
-              </div>
-            )}
-
-            {/* Success Message */}
-            {status === 'success' && (
-              <div className="p-4 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-800 space-y-1">
-                <div className="flex items-center gap-2 font-semibold text-xs sm:text-sm">
-                  <CheckCircle className="w-4 h-4 text-emerald-600 flex-shrink-0" />
-                  <span>Email client opened!</span>
+            <form onSubmit={handleSubmit} className="space-y-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label htmlFor="name" className="block text-xs font-semibold text-gray-700 uppercase tracking-wider mb-1.5">
+                    Your Name *
+                  </label>
+                  <input
+                    id="name"
+                    type="text"
+                    required
+                    value={formData.name}
+                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                    className="w-full px-4 py-3 text-sm rounded-xl border border-gray-300 bg-white/90 focus:outline-none focus:border-black focus:ring-1 focus:ring-black transition"
+                    placeholder="Om Suryawanshi"
+                  />
                 </div>
-                <p className="text-xs text-emerald-700">
-                  Your message has been prefilled into your email composer. You can also email me directly at{' '}
-                  <strong className="underline">{profileData.contact.email}</strong>.
-                </p>
-              </div>
-            )}
 
-            <motion.button
-              type="submit"
-              disabled={status === 'loading'}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              transition={{ duration: 0.2 }}
-              className="w-full sm:w-auto px-10 py-3.5 bg-black text-white rounded-full font-semibold text-sm hover:bg-gray-800 transition flex items-center justify-center gap-2 shadow-sm disabled:opacity-50"
-            >
-              {status === 'loading' ? (
-                <span>Preparing message...</span>
-              ) : (
-                <>
-                  <span>Send Message</span>
-                  <Send className="w-4 h-4" />
-                </>
+                <div>
+                  <label htmlFor="email" className="block text-xs font-semibold text-gray-700 uppercase tracking-wider mb-1.5">
+                    Email Address *
+                  </label>
+                  <input
+                    id="email"
+                    type="email"
+                    required
+                    value={formData.email}
+                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                    className="w-full px-4 py-3 text-sm rounded-xl border border-gray-300 bg-white/90 focus:outline-none focus:border-black focus:ring-1 focus:ring-black transition"
+                    placeholder="name@example.com"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label htmlFor="message" className="block text-xs font-semibold text-gray-700 uppercase tracking-wider mb-1.5">
+                  Message *
+                </label>
+                <textarea
+                  id="message"
+                  required
+                  rows={4}
+                  value={formData.message}
+                  onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                  className="w-full px-4 py-3 text-sm rounded-xl border border-gray-300 bg-white/90 focus:outline-none focus:border-black focus:ring-1 focus:ring-black transition resize-none"
+                  placeholder="Tell me about your project, ideas, or opportunities..."
+                />
+              </div>
+
+              {/* Error Message */}
+              {status === 'error' && (
+                <div className="flex items-center gap-2 p-3 text-xs rounded-xl bg-red-50 border border-red-200 text-red-700">
+                  <AlertCircle className="w-4 h-4 flex-shrink-0" />
+                  <span>{errorMessage}</span>
+                </div>
               )}
-            </motion.button>
-          </form>
+
+              {/* Success Message */}
+              {status === 'success' && (
+                <div className="p-4 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-800 space-y-1">
+                  <div className="flex items-center gap-2 font-semibold text-xs sm:text-sm">
+                    <CheckCircle className="w-4 h-4 text-emerald-600 flex-shrink-0" />
+                    <span>Email client opened!</span>
+                  </div>
+                  <p className="text-xs text-emerald-700">
+                    Your message has been prefilled into your email composer. You can also email me directly at{' '}
+                    <strong className="underline">{profileData.contact.email}</strong>.
+                  </p>
+                </div>
+              )}
+
+              <div className="pt-2">
+                <motion.button
+                  type="submit"
+                  disabled={status === 'loading'}
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                  transition={{ duration: 0.2 }}
+                  className="w-full sm:w-auto px-8 py-3.5 bg-black text-white rounded-full font-semibold text-sm hover:bg-gray-800 transition flex items-center justify-center gap-2 shadow-sm disabled:opacity-50"
+                >
+                  {status === 'loading' ? (
+                    <span>Preparing message...</span>
+                  ) : (
+                    <>
+                      <span>Send Message</span>
+                      <Send className="w-4 h-4" />
+                    </>
+                  )}
+                </motion.button>
+              </div>
+            </form>
+          </div>
         </motion.div>
       </div>
     </section>
