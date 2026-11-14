@@ -43,7 +43,7 @@ export const profileData: ProfileData = {
       id: "projects",
       icon: "folder-kanban",
       title: "Projects & Interests",
-      description: "Machine learning, AI agents & RAG, full-stack apps, data analytics",
+      description: "Machine learning, AI agents & RAG, full-stack apps, DevOps",
     },
   ],
 };

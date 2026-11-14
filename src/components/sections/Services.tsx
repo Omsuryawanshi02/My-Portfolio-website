@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { servicesData } from '../../data/services';
 import { SectionHeading } from '../ui/SectionHeading';
-import { Brain, Bot, Layout, BarChart3 } from 'lucide-react';
+import { Brain, Bot, Layout, Infinity } from 'lucide-react';
 
 export const Services: React.FC = () => {
   const getServiceIcon = (id: string) => {
@@ -13,8 +13,8 @@ export const Services: React.FC = () => {
         return <Bot className="w-8 h-8 text-emerald-600" />;
       case 'full-stack':
         return <Layout className="w-8 h-8 text-blue-600" />;
-      case 'data-analytics':
-        return <BarChart3 className="w-8 h-8 text-amber-600" />;
+      case 'devops':
+        return <Infinity className="w-8 h-8 text-amber-600" />;
       default:
         return <Brain className="w-8 h-8 text-gray-700" />;
     }

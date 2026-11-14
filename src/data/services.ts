@@ -28,11 +28,11 @@ export const servicesData: ServiceItem[] = [
       "Developing responsive web interfaces and connecting them with application logic, APIs, and databases.",
   },
   {
-    id: "data-analytics",
-    icon: "bar-chart-3",
-    emoji: "📊",
-    title: "Data Analytics",
+    id: "devops",
+    icon: "infinity",
+    emoji: "🚀",
+    title: "DevOps",
     description:
-      "Cleaning data, exploring patterns, calculating KPIs, and turning information into useful business insights.",
+      "Automating CI/CD pipelines, containerizing applications, managing cloud deployments, and streamlining workflows.",
   },
 ];
