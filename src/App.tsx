@@ -5,6 +5,7 @@ import {
   About,
   Services,
   Projects,
+  Experience,
   Community,
   Contact,
 } from './components/sections';
@@ -30,6 +31,9 @@ export const App: React.FC = () => {
 
         {/* Featured Projects / My Work Section */}
         <Projects />
+
+        {/* Work Experience Section */}
+        <Experience />
 
         {/* Community & Engagement Section */}
         <Community />

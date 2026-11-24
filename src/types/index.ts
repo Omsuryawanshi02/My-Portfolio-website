@@ -3,3 +3,4 @@ export * from './project';
 export * from './service';
 export * from './technology';
 export * from './community';
+export * from './experience';
